@@ -1,0 +1,624 @@
+[
+  {
+    "screenId": "71392433539d496fb79defdfb92bd458",
+    "title": "Status Board - YardPulse Control",
+    "componentName": "StatusBoardYardpulseControl",
+    "file": "src/screens/StatusBoardYardpulseControl.tsx",
+    "buttons": 10,
+    "inputs": 1,
+    "links": 7,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "account-circle-2",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 1
+      },
+      {
+        "id": "filter-3",
+        "kind": "button",
+        "label": "Filter",
+        "index": 2
+      },
+      {
+        "id": "new-entry-4",
+        "kind": "button",
+        "label": "New Entry",
+        "index": 3
+      },
+      {
+        "id": "assign-5",
+        "kind": "button",
+        "label": "Assign",
+        "index": 4
+      },
+      {
+        "id": "assign-6",
+        "kind": "button",
+        "label": "Assign",
+        "index": 5
+      },
+      {
+        "id": "update-7",
+        "kind": "button",
+        "label": "Update",
+        "index": 6
+      },
+      {
+        "id": "details-8",
+        "kind": "button",
+        "label": "Details",
+        "index": 7
+      },
+      {
+        "id": "details-9",
+        "kind": "button",
+        "label": "Details",
+        "index": 8
+      },
+      {
+        "id": "clear-to-dep-10",
+        "kind": "button",
+        "label": "Clear to Dep",
+        "index": 9
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "691a96ff7c3343f8b55f0bea8f8bb935",
+    "title": "Item Editor - YardPulse Control",
+    "componentName": "ItemEditorYardpulseControl",
+    "file": "src/screens/ItemEditorYardpulseControl.tsx",
+    "buttons": 2,
+    "inputs": 3,
+    "links": 11,
+    "actions": [
+      {
+        "id": "cancel-1",
+        "kind": "button",
+        "label": "Cancel",
+        "index": 0
+      },
+      {
+        "id": "save-changes-2",
+        "kind": "button",
+        "label": "Save Changes",
+        "index": 1
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      },
+      {
+        "id": "items-8",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 7
+      },
+      {
+        "id": "editor-9",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 8
+      },
+      {
+        "id": "status-10",
+        "kind": "link",
+        "label": "Status",
+        "href": "#",
+        "index": 9
+      },
+      {
+        "id": "settings-11",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 10
+      }
+    ]
+  },
+  {
+    "screenId": "46076d5f4d47498eae86ce84f7e0acdf",
+    "title": "Item Operations - YardPulse Control",
+    "componentName": "ItemOperationsYardpulseControl",
+    "file": "src/screens/ItemOperationsYardpulseControl.tsx",
+    "buttons": 9,
+    "inputs": 7,
+    "links": 7,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "account-circle-2",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 1
+      },
+      {
+        "id": "refresh-3",
+        "kind": "button",
+        "label": "Refresh",
+        "index": 2
+      },
+      {
+        "id": "create-new-item-4",
+        "kind": "button",
+        "label": "Create New Item",
+        "index": 3
+      },
+      {
+        "id": "status-all-5",
+        "kind": "button",
+        "label": "Status: All",
+        "index": 4
+      },
+      {
+        "id": "track-mainline-6",
+        "kind": "button",
+        "label": "Track: Mainline",
+        "index": 5
+      },
+      {
+        "id": "close-7",
+        "kind": "button",
+        "label": "Close",
+        "index": 6
+      },
+      {
+        "id": "edit-details-8",
+        "kind": "button",
+        "label": "Edit Details",
+        "index": 7
+      },
+      {
+        "id": "reassign-track-9",
+        "kind": "button",
+        "label": "Reassign Track",
+        "index": 8
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "947453c236624bb5bb5a6eb4fd7b8a56",
+    "title": "Settings and Preferences - YardPulse Control",
+    "componentName": "SettingsAndPreferencesYardpulseControl",
+    "file": "src/screens/SettingsAndPreferencesYardpulseControl.tsx",
+    "buttons": 8,
+    "inputs": 4,
+    "links": 7,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "account-2",
+        "kind": "button",
+        "label": "Account",
+        "index": 1
+      },
+      {
+        "id": "reset-defaults-3",
+        "kind": "button",
+        "label": "Reset Defaults",
+        "index": 2
+      },
+      {
+        "id": "save-configuration-4",
+        "kind": "button",
+        "label": "Save Configuration",
+        "index": 3
+      },
+      {
+        "id": "add-5",
+        "kind": "button",
+        "label": "Add",
+        "index": 4
+      },
+      {
+        "id": "delete-6",
+        "kind": "button",
+        "label": "Delete",
+        "index": 5
+      },
+      {
+        "id": "delete-7",
+        "kind": "button",
+        "label": "Delete",
+        "index": 6
+      },
+      {
+        "id": "delete-8",
+        "kind": "button",
+        "label": "Delete",
+        "index": 7
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "0d5d7b2229064b71a48e8fb17865fbfe",
+    "title": "Insights - YardPulse Control",
+    "componentName": "InsightsYardpulseControl",
+    "file": "src/screens/InsightsYardpulseControl.tsx",
+    "buttons": 4,
+    "inputs": 1,
+    "links": 7,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "account-circle-2",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 1
+      },
+      {
+        "id": "export-summary-3",
+        "kind": "button",
+        "label": "Export Summary",
+        "index": 2
+      },
+      {
+        "id": "filter-4",
+        "kind": "button",
+        "label": "Filter",
+        "index": 3
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  },
+  {
+    "screenId": "15d464135374477da92e0ae67694d309",
+    "title": "Empty and Error Recovery - YardPulse Control",
+    "componentName": "EmptyAndErrorRecoveryYardpulseControl",
+    "file": "src/screens/EmptyAndErrorRecoveryYardpulseControl.tsx",
+    "buttons": 6,
+    "inputs": 1,
+    "links": 7,
+    "actions": [
+      {
+        "id": "notifications-1",
+        "kind": "button",
+        "label": "Notifications",
+        "index": 0
+      },
+      {
+        "id": "account-circle-2",
+        "kind": "button",
+        "label": "Account Circle",
+        "index": 1
+      },
+      {
+        "id": "act-retry-load-3",
+        "kind": "button",
+        "label": "ACT_RETRY_LOAD",
+        "index": 2
+      },
+      {
+        "id": "view-logs-4",
+        "kind": "button",
+        "label": "View Logs",
+        "index": 3
+      },
+      {
+        "id": "clear-all-filters-5",
+        "kind": "button",
+        "label": "Clear All Filters",
+        "index": 4
+      },
+      {
+        "id": "act-create-record-6",
+        "kind": "button",
+        "label": "ACT_CREATE_RECORD",
+        "index": 5
+      },
+      {
+        "id": "items-1",
+        "kind": "link",
+        "label": "Items",
+        "href": "#",
+        "index": 0
+      },
+      {
+        "id": "editor-2",
+        "kind": "link",
+        "label": "Editor",
+        "href": "#",
+        "index": 1
+      },
+      {
+        "id": "status-board-3",
+        "kind": "link",
+        "label": "Status Board",
+        "href": "#",
+        "index": 2
+      },
+      {
+        "id": "insights-4",
+        "kind": "link",
+        "label": "Insights",
+        "href": "#",
+        "index": 3
+      },
+      {
+        "id": "settings-5",
+        "kind": "link",
+        "label": "Settings",
+        "href": "#",
+        "index": 4
+      },
+      {
+        "id": "help-6",
+        "kind": "link",
+        "label": "Help",
+        "href": "#",
+        "index": 5
+      },
+      {
+        "id": "logout-7",
+        "kind": "link",
+        "label": "Logout",
+        "href": "#",
+        "index": 6
+      }
+    ]
+  }
+]
