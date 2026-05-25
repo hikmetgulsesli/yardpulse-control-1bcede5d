@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Status Board - YardPulse Control</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#0f172a",
+                        "surface-tint": "#bec6e0",
+                        "surface-bright": "#2a3a4f",
+                        "on-primary": "#283044",
+                        "tertiary-container": "#001d07",
+                        "tertiary-fixed": "#6bff8f",
+                        "on-error-container": "#ffdad6",
+                        "error-container": "#93000a",
+                        "on-secondary-fixed": "#341100",
+                        "on-background": "#d3e4fe",
+                        "on-error": "#690005",
+                        "secondary-fixed": "#ffdbca",
+                        "inverse-primary": "#565e74",
+                        "secondary-container": "#ec6a06",
+                        "error": "#ffb4ab",
+                        "on-tertiary-container": "#009542",
+                        "secondary": "#ffb690",
+                        "on-secondary-container": "#4a1c00",
+                        "on-surface-variant": "#c6c6cd",
+                        "surface": "#031427",
+                        "on-secondary": "#552100",
+                        "inverse-on-surface": "#213145",
+                        "primary-fixed": "#dae2fd",
+                        "outline": "#909097",
+                        "on-tertiary-fixed-variant": "#005321",
+                        "surface-variant": "#26364a",
+                        "on-tertiary": "#003915",
+                        "primary": "#bec6e0",
+                        "outline-variant": "#45464d",
+                        "surface-container-highest": "#26364a",
+                        "background": "#031427",
+                        "surface-container-lowest": "#000f21",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-primary-fixed": "#131b2e",
+                        "on-primary-container": "#798098",
+                        "on-surface": "#d3e4fe",
+                        "tertiary-fixed-dim": "#4ae176",
+                        "on-secondary-fixed-variant": "#783200",
+                        "surface-container": "#102034",
+                        "surface-container-high": "#1b2b3f",
+                        "surface-container-low": "#0b1c30",
+                        "primary-fixed-dim": "#bec6e0",
+                        "secondary-fixed-dim": "#ffb690",
+                        "inverse-surface": "#d3e4fe",
+                        "on-tertiary-fixed": "#002109",
+                        "tertiary": "#4ae176",
+                        "surface-dim": "#031427"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "12px",
+                        "xs": "4px",
+                        "md": "12px",
+                        "xl": "24px",
+                        "unit": "4px",
+                        "lg": "16px",
+                        "sm": "8px",
+                        "sidebar_width": "240px",
+                        "sidebar_collapsed": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Inter"],
+                        "data-tabular": ["Inter"],
+                        "mono-data": ["JetBrains Mono"],
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-caps": ["Inter"],
+                        "display-sm": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                        "data-tabular": ["13px", {"lineHeight": "16px", "fontWeight": "500"}],
+                        "mono-data": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-sm": ["12px", {"lineHeight": "16px", "fontWeight": "400"}],
+                        "body-md": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "label-caps": ["11px", {"lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                        "display-sm": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        /* Custom scrollbar for Kanban board to maintain functional minimalist aesthetic */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #45464d; /* outline-variant */
+            border-radius: 3px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #909097; /* outline */
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen overflow-hidden flex">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline-variant flex justify-between items-center h-12 px-xl transition-colors duration-150">
+<div class="flex items-center gap-xl">
+<div class="font-headline-sm text-headline-sm font-bold text-secondary dark:text-secondary">
+                YardPulse Control
+            </div>
+<!-- Search Bar (on_left) -->
+<div class="relative hidden md:flex items-center">
+<span class="material-symbols-outlined absolute left-sm text-on-surface-variant text-[18px]" style="font-variation-settings: 'FILL' 0;">search</span>
+<input class="bg-[#0F172A] border border-outline-variant text-on-surface text-body-sm font-body-sm rounded pl-8 pr-sm py-1 focus:outline-none focus:ring-1 focus:ring-secondary-container focus:border-secondary-container w-64 placeholder:text-on-surface-variant" placeholder="Search ID, Track..." type="text"/>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant dark:hover:bg-surface-variant p-sm rounded transition-colors duration-150 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-on-surface-variant dark:text-on-surface-variant hover:bg-surface-variant dark:hover:bg-surface-variant p-sm rounded transition-colors duration-150 flex items-center justify-center">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+</button>
+</div>
+</header>
+<!-- SideNavBar -->
+<nav class="fixed left-0 top-0 h-full w-sidebar_width bg-surface-container dark:bg-surface-container border-r border-outline-variant dark:border-outline-variant flex flex-col pt-12 transition-all duration-200 z-40">
+<!-- Header Info -->
+<div class="px-md py-lg border-b border-outline-variant/50 mb-sm flex items-center gap-md">
+<div class="w-8 h-8 rounded bg-surface-variant flex items-center justify-center text-primary border border-outline-variant">
+<span class="material-symbols-outlined text-[20px]">badge</span>
+</div>
+<div>
+<div class="font-data-tabular text-data-tabular text-on-surface">Yard Master</div>
+<div class="font-body-sm text-body-sm text-tertiary">Active Session</div>
+</div>
+</div>
+<!-- Navigation Links -->
+<div class="flex-1 flex flex-col gap-xs py-sm">
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-primary transition-colors" data-icon="inventory_2">inventory_2</span>
+<span class="font-body-md text-body-md">Items</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-primary transition-colors" data-icon="edit_note">edit_note</span>
+<span class="font-body-md text-body-md">Editor</span>
+</a>
+<!-- Active State -->
+<a class="border-l-4 border-tertiary text-tertiary-fixed-dim bg-surface-container-high font-bold flex items-center px-md py-xs transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-md text-[20px]" data-icon="dashboard" style="font-variation-settings: 'FILL' 1;">dashboard</span>
+<span class="font-body-md text-body-md">Status Board</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-primary transition-colors" data-icon="analytics">analytics</span>
+<span class="font-body-md text-body-md">Insights</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-primary transition-colors" data-icon="settings">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+<!-- Footer Links -->
+<div class="mt-auto border-t border-outline-variant/50 py-sm flex flex-col gap-xs">
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-primary transition-colors" data-icon="help">help</span>
+<span class="font-body-md text-body-md">Help</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-xs hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200 group" href="#">
+<span class="material-symbols-outlined mr-md text-[20px] group-hover:text-error transition-colors" data-icon="logout">logout</span>
+<span class="font-body-md text-body-md">Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="ml-sidebar_width mt-12 flex-1 h-[calc(100vh-48px)] bg-background flex flex-col overflow-hidden">
+<!-- Board Header Tools -->
+<div class="px-lg py-md border-b border-outline-variant flex justify-between items-center bg-surface-dim shrink-0">
+<div class="flex items-center gap-md">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Live Yard Status</h1>
+<div class="h-4 w-px bg-outline-variant"></div>
+<div class="flex gap-sm">
+<span class="inline-flex items-center gap-1 bg-surface-container px-2 py-1 rounded text-body-sm font-body-sm border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> System Nominal
+                    </span>
+</div>
+</div>
+<div class="flex gap-sm">
+<button class="bg-surface-container hover:bg-surface-variant border border-outline-variant text-on-surface px-md py-xs rounded font-data-tabular text-data-tabular flex items-center gap-xs transition-colors">
+<span class="material-symbols-outlined text-[16px]">filter_list</span> Filter
+                </button>
+<button class="bg-secondary-container hover:bg-[#ff8a3d] text-white px-md py-xs rounded font-data-tabular text-data-tabular flex items-center gap-xs transition-colors">
+<span class="material-symbols-outlined text-[16px]">add</span> New Entry
+                </button>
+</div>
+</div>
+<!-- Kanban Board Area -->
+<div class="flex-1 overflow-x-auto overflow-y-hidden p-md flex gap-md items-start">
+<!-- Column: Incoming -->
+<div class="flex flex-col w-[320px] shrink-0 bg-surface-container-low rounded-lg border border-outline-variant/30 h-full max-h-full">
+<div class="p-sm border-b border-outline-variant/50 flex justify-between items-center bg-surface/50 rounded-t-lg">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant uppercase flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">south_east</span> Incoming
+                    </h2>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-mono-data text-mono-data text-[10px]">3</span>
+</div>
+<div class="p-sm flex flex-col gap-sm overflow-y-auto flex-1">
+<!-- Card -->
+<div class="bg-surface-container-highest border border-outline-variant rounded p-sm hover:border-primary transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-mono-data text-mono-data text-primary-fixed">BNSF-8921</span>
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant" title="Standard Priority">schedule</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs">Mixed Freight (112 Cars)</div>
+<div class="flex justify-between items-center border-t border-outline-variant/50 pt-xs mt-xs">
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">route</span> ETA: 14:30
+                            </div>
+<button class="text-secondary hover:text-secondary-fixed text-[10px] font-label-caps uppercase tracking-wider">Assign</button>
+</div>
+</div>
+<!-- Card -->
+<div class="bg-surface-container-highest border border-outline-variant rounded p-sm hover:border-primary transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-mono-data text-mono-data text-primary-fixed">UP-4402</span>
+<span class="material-symbols-outlined text-[16px] text-secondary" style="font-variation-settings: 'FILL' 1;" title="High Priority">warning</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs">Intermodal Priority</div>
+<div class="flex justify-between items-center border-t border-outline-variant/50 pt-xs mt-xs">
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">route</span> ETA: 15:15
+                            </div>
+<button class="text-secondary hover:text-secondary-fixed text-[10px] font-label-caps uppercase tracking-wider">Assign</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Column: In-Yard (Active) -->
+<div class="flex flex-col w-[320px] shrink-0 bg-surface-container-low rounded-lg border border-outline-variant/30 h-full max-h-full">
+<div class="p-sm border-b border-outline-variant/50 flex justify-between items-center bg-surface/50 rounded-t-lg">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant uppercase flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">sync_alt</span> In-Yard Processing
+                    </h2>
+<span class="bg-surface-variant text-on-surface px-1.5 py-0.5 rounded font-mono-data text-mono-data text-[10px]">4</span>
+</div>
+<div class="p-sm flex flex-col gap-sm overflow-y-auto flex-1">
+<!-- Card (Blocked) -->
+<div class="bg-[#1b1114] border border-error-container rounded p-sm relative group cursor-pointer">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-error rounded-r opacity-80"></div>
+<div class="flex justify-between items-start mb-xs">
+<span class="font-mono-data text-mono-data text-error">CSX-9910</span>
+<span class="bg-error-container text-on-error-container text-[10px] px-1 rounded font-label-caps">Blocked</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs">Coal Drag • Trk 14N</div>
+<div class="font-body-sm text-body-sm text-error/80 mb-sm text-[11px]">Mech issue on lead loco. Crew pending.</div>
+<div class="flex justify-between items-center border-t border-error-container/50 pt-xs mt-xs">
+<div class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px]">timer</span> 08h 42m
+                            </div>
+<button class="text-on-surface hover:text-white bg-surface-variant hover:bg-surface-bright px-2 py-0.5 rounded text-[10px] border border-outline-variant transition-colors">Update</button>
+</div>
+</div>
+<!-- Card (Active) -->
+<div class="bg-surface-container-highest border border-outline-variant rounded p-sm hover:border-primary transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-mono-data text-mono-data text-primary-fixed">NS-228</span>
+<span class="bg-tertiary/20 text-tertiary-fixed-dim text-[10px] px-1 rounded font-label-caps border border-tertiary/30">Sorting</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs">Auto Racks • Bowl 4</div>
+<div class="flex justify-between items-center border-t border-outline-variant/50 pt-xs mt-xs">
+<div class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px]">timer</span> 02h 15m
+                            </div>
+<button class="text-on-surface hover:text-white bg-surface-variant hover:bg-surface-bright px-2 py-0.5 rounded text-[10px] border border-outline-variant transition-colors">Details</button>
+</div>
+</div>
+<!-- Card (Active) -->
+<div class="bg-surface-container-highest border border-outline-variant rounded p-sm hover:border-primary transition-colors group cursor-pointer">
+<div class="flex justify-between items-start mb-xs">
+<span class="font-mono-data text-mono-data text-primary-fixed">CN-5044</span>
+<span class="bg-surface-variant text-on-surface-variant text-[10px] px-1 rounded font-label-caps border border-outline-variant/50">Inspection</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs">Grain Empty • Trk 08S</div>
+<div class="flex justify-between items-center border-t border-outline-variant/50 pt-xs mt-xs">
+<div class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-1 text-[11px]">
+<span class="material-symbols-outlined text-[14px]">timer</span> 05h 30m
+                            </div>
+<button class="text-on-surface hover:text-white bg-surface-variant hover:bg-surface-bright px-2 py-0.5 rounded text-[10px] border border-outline-variant transition-colors">Details</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Column: Ready -->
+<div class="flex flex-col w-[320px] shrink-0 bg-surface-container-low rounded-lg border border-outline-variant/30 h-full max-h-full">
+<div class="p-sm border-b border-outline-variant/50 flex justify-between items-center bg-surface/50 rounded-t-lg">
+<h2 class="font-label-caps text-label-caps text-on-surface-variant uppercase flex items-center gap-xs">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> Ready
+                    </h2>
+<span class="bg-tertiary/20 text-tertiary-fixed-dim px-1.5 py-0.5 rounded font-mono-data text-mono-data text-[10px] border border-tertiary/30">2</span>
+</div>
+<div class="p-sm flex flex-col gap-sm overflow-y-auto flex-1">
+<!-- Card (Ready) -->
+<div class="bg-surface-container-highest border border-tertiary/40 rounded p-sm hover:border-tertiary transition-colors group cursor-pointer relative overflow-hidden">
+<div class="absolute left-0 top-0 w-1 h-full bg-tertiary/50"></div>
+<div class="flex justify-between items-start mb-xs pl-2">
+<span class="font-mono-data text-mono-data text-primary-fixed">KCS-771</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">check</span>
+</div>
+<div class="font-data-tabular text-data-tabular text-on-surface mb-xs pl-2">Built: Chemical Mix • Dep 2</div>
+<div class="flex justify-between items-center border-t border-outline-variant/50 pt-xs mt-xs pl-2">
+<div class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">person</span> Crew Ready
+                            </div>
+<button class="bg-secondary-container hover:bg-[#ff8a3d] text-white px-2 py-0.5 rounded text-[10px] font-label-caps uppercase tracking-wider transition-colors">Clear to Dep</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</body></html>

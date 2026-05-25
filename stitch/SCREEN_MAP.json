@@ -1,0 +1,56 @@
+[
+  {
+    "screenId": "71392433539d496fb79defdfb92bd458",
+    "name": "Status Board - YardPulse Control",
+    "type": "app-screen",
+    "description": "Status Board - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_STATUS_BOARD"
+    ]
+  },
+  {
+    "screenId": "691a96ff7c3343f8b55f0bea8f8bb935",
+    "name": "Item Editor - YardPulse Control",
+    "type": "form",
+    "description": "Item Editor - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_ITEM_EDITOR"
+    ]
+  },
+  {
+    "screenId": "46076d5f4d47498eae86ce84f7e0acdf",
+    "name": "Item Operations - YardPulse Control",
+    "type": "app-screen",
+    "description": "Item Operations - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_ITEM_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "947453c236624bb5bb5a6eb4fd7b8a56",
+    "name": "Settings and Preferences - YardPulse Control",
+    "type": "settings",
+    "description": "Settings and Preferences - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "0d5d7b2229064b71a48e8fb17865fbfe",
+    "name": "Insights - YardPulse Control",
+    "type": "app-screen",
+    "description": "Insights - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "15d464135374477da92e0ae67694d309",
+    "name": "Empty and Error Recovery - YardPulse Control",
+    "type": "error",
+    "description": "Empty and Error Recovery - YardPulse Control screen",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  }
+]

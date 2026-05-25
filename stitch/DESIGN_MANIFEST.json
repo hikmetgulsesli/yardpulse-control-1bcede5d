@@ -1,0 +1,68 @@
+[
+  {
+    "screenId": "71392433539d496fb79defdfb92bd458",
+    "title": "Status Board - YardPulse Control",
+    "htmlFile": "71392433539d496fb79defdfb92bd458.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzkxODQ0MjJmMzc0ZjQ4YWI4NjJlMGE2NzkwOTZiMzM3EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/71392433539d496fb79defdfb92bd458.html",
+    "surfaceIds": [
+      "SURF_STATUS_BOARD"
+    ]
+  },
+  {
+    "screenId": "691a96ff7c3343f8b55f0bea8f8bb935",
+    "title": "Item Editor - YardPulse Control",
+    "htmlFile": "691a96ff7c3343f8b55f0bea8f8bb935.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2E4YTZmNGY5NDMxYTQ1ZTE5YWM5ZDgwMjQxMDRkM2E2EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/691a96ff7c3343f8b55f0bea8f8bb935.html",
+    "surfaceIds": [
+      "SURF_ITEM_EDITOR"
+    ]
+  },
+  {
+    "screenId": "46076d5f4d47498eae86ce84f7e0acdf",
+    "title": "Item Operations - YardPulse Control",
+    "htmlFile": "46076d5f4d47498eae86ce84f7e0acdf.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzljMTg3MDkwZGZjMjQ1NzE5NjgyNmU3ZDU1MWE5NTU0EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/46076d5f4d47498eae86ce84f7e0acdf.html",
+    "surfaceIds": [
+      "SURF_ITEM_OPERATIONS"
+    ]
+  },
+  {
+    "screenId": "947453c236624bb5bb5a6eb4fd7b8a56",
+    "title": "Settings and Preferences - YardPulse Control",
+    "htmlFile": "947453c236624bb5bb5a6eb4fd7b8a56.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzVkOTRhNzhiMGM3NTQyZGZiMzRlYWVkMWYwMDA4NWUxEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/947453c236624bb5bb5a6eb4fd7b8a56.html",
+    "surfaceIds": [
+      "SURF_SETTINGS_AND_PREFERENCES"
+    ]
+  },
+  {
+    "screenId": "0d5d7b2229064b71a48e8fb17865fbfe",
+    "title": "Insights - YardPulse Control",
+    "htmlFile": "0d5d7b2229064b71a48e8fb17865fbfe.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzczZWMxMTc5ZGUyNzQwYThiM2FkMjUwMDYyOGU5NDExEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/0d5d7b2229064b71a48e8fb17865fbfe.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "15d464135374477da92e0ae67694d309",
+    "title": "Empty and Error Recovery - YardPulse Control",
+    "htmlFile": "15d464135374477da92e0ae67694d309.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzcwNjA5MDFjYWYzNTQ2MzdhNjQxOTNhYmY2ZTA5ZTc2EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhM5NzI4MTUzMzM5NDQyMzE0OTQ5&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/yardpulse-control-1bcede5d/stitch/15d464135374477da92e0ae67694d309.html",
+    "surfaceIds": [
+      "SURF_EMPTY_AND_ERROR_RECOVERY"
+    ]
+  }
+]

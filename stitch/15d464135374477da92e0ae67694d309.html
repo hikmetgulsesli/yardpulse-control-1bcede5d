@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>YardPulse Control - System Recovery</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#bec6e0",
+                        "outline-variant": "#45464d",
+                        "tertiary-fixed": "#6bff8f",
+                        "on-tertiary-fixed": "#002109",
+                        "on-primary-fixed-variant": "#3f465c",
+                        "on-error": "#690005",
+                        "surface-container-lowest": "#000f21",
+                        "inverse-on-surface": "#213145",
+                        "outline": "#909097",
+                        "surface-container-low": "#0b1c30",
+                        "inverse-surface": "#d3e4fe",
+                        "tertiary-container": "#001d07",
+                        "error": "#ffb4ab",
+                        "error-container": "#93000a",
+                        "background": "#031427",
+                        "on-error-container": "#ffdad6",
+                        "secondary-fixed": "#ffdbca",
+                        "surface-dim": "#031427",
+                        "on-secondary-container": "#4a1c00",
+                        "primary-container": "#0f172a",
+                        "surface-variant": "#26364a",
+                        "tertiary-fixed-dim": "#4ae176",
+                        "surface-bright": "#2a3a4f",
+                        "tertiary": "#4ae176",
+                        "inverse-primary": "#565e74",
+                        "surface-container": "#102034",
+                        "surface": "#031427",
+                        "secondary": "#ffb690",
+                        "on-secondary-fixed": "#341100",
+                        "on-tertiary-fixed-variant": "#005321",
+                        "secondary-fixed-dim": "#ffb690",
+                        "secondary-container": "#ec6a06",
+                        "on-tertiary-container": "#009542",
+                        "on-secondary-fixed-variant": "#783200",
+                        "primary": "#bec6e0",
+                        "on-primary-fixed": "#131b2e",
+                        "on-primary-container": "#798098",
+                        "on-primary": "#283044",
+                        "surface-tint": "#bec6e0",
+                        "surface-container-highest": "#26364a",
+                        "on-background": "#d3e4fe",
+                        "on-surface-variant": "#c6c6cd",
+                        "on-tertiary": "#003915",
+                        "primary-fixed": "#dae2fd",
+                        "surface-container-high": "#1b2b3f",
+                        "on-secondary": "#552100",
+                        "on-surface": "#d3e4fe"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "sidebar_width": "240px",
+                        "xl": "24px",
+                        "xs": "4px",
+                        "sidebar_collapsed": "64px",
+                        "unit": "4px",
+                        "lg": "16px",
+                        "sm": "8px",
+                        "md": "12px",
+                        "gutter": "12px"
+                    },
+                    "fontFamily": {
+                        "data-tabular": ["Inter"],
+                        "mono-data": ["JetBrains Mono"],
+                        "label-caps": ["Inter"],
+                        "body-sm": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "display-sm": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "data-tabular": ["13px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "mono-data": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "label-caps": ["11px", { "lineHeight": "12px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }],
+                        "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }],
+                        "display-sm": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface h-screen w-screen overflow-hidden flex flex-col font-body-md">
+<!-- TopAppBar -->
+<header class="bg-surface dark:bg-surface text-primary dark:text-primary fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline-variant transition-colors duration-150 flex justify-between items-center h-12 px-xl">
+<div class="flex items-center gap-md">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">train</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary dark:text-secondary">YardPulse Control</span>
+</div>
+<div class="flex items-center gap-sm bg-surface-container px-sm py-xs rounded border border-outline-variant w-64">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">search</span>
+<input class="bg-transparent border-none outline-none text-body-sm font-body-sm text-on-surface w-full placeholder:text-on-surface-variant focus:ring-0" placeholder="Search Yard Data..." type="text"/>
+</div>
+<div class="flex items-center gap-sm">
+<button class="p-xs rounded hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors duration-150 text-on-surface-variant dark:text-on-surface-variant">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="p-xs rounded hover:bg-surface-variant dark:hover:bg-surface-variant transition-colors duration-150 text-on-surface-variant dark:text-on-surface-variant">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+</header>
+<div class="flex flex-1 pt-12 h-full">
+<!-- SideNavBar -->
+<nav class="bg-surface-container dark:bg-surface-container text-primary dark:text-primary fixed left-0 top-0 h-full w-sidebar_width border-r border-outline-variant dark:border-outline-variant transition-all duration-200 flex flex-col pt-12 z-40 hidden md:flex">
+<div class="px-lg py-md mb-md border-b border-outline-variant">
+<div class="font-headline-sm text-headline-sm text-on-surface">Yard Master</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant mt-xs">Active Session</div>
+</div>
+<div class="flex-1 flex flex-col gap-unit overflow-y-auto py-sm">
+<!-- Items (Active) -->
+<a class="border-l-4 border-tertiary text-tertiary-fixed-dim bg-surface-container-high font-bold flex items-center px-md py-sm transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]" style="font-variation-settings: 'FILL' 1;">inventory_2</span>
+<span class="font-body-md text-body-md">Items</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">edit_note</span>
+<span class="font-body-md text-body-md">Editor</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">dashboard</span>
+<span class="font-body-md text-body-md">Status Board</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">analytics</span>
+<span class="font-body-md text-body-md">Insights</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">settings</span>
+<span class="font-body-md text-body-md">Settings</span>
+</a>
+</div>
+<div class="mt-auto border-t border-outline-variant py-sm flex flex-col gap-unit">
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">help</span>
+<span class="font-body-md text-body-md">Help</span>
+</a>
+<a class="text-on-surface-variant dark:text-on-surface-variant flex items-center px-md py-sm hover:bg-surface-container-highest dark:hover:bg-surface-container-highest transition-all duration-200" href="#">
+<span class="material-symbols-outlined mr-sm text-[20px]">logout</span>
+<span class="font-body-md text-body-md">Logout</span>
+</a>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 ml-0 md:ml-sidebar_width p-lg overflow-y-auto bg-surface-dim">
+<div class="max-w-6xl mx-auto space-y-xl">
+<div class="mb-lg">
+<h1 class="font-display-sm text-display-sm text-on-surface mb-xs">System Recovery &amp; Empty States</h1>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Diagnostics view for unpopulated or failed data requests.</p>
+</div>
+<!-- 1. Global Data Load Failure -->
+<section class="bg-error-container/10 border border-error/20 rounded p-lg flex items-start gap-lg relative overflow-hidden">
+<div class="absolute top-0 left-0 w-1 h-full bg-error"></div>
+<div class="p-sm bg-error-container/20 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-error text-[28px]">warning</span>
+</div>
+<div class="flex-1">
+<h2 class="font-headline-sm text-headline-sm text-error mb-xs">System Connection Error</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-md">Unable to establish a secure connection with the central dispatch server. Live telemetry data cannot be fetched at this time.</p>
+<div class="bg-surface-container p-sm rounded border border-outline-variant inline-block mb-md">
+<span class="font-mono-data text-mono-data text-on-surface-variant">ERR_CODE: 503 Service Unavailable | NODE: YRD-ALPHA-01</span>
+</div>
+<div class="flex gap-md">
+<button class="bg-secondary-container hover:bg-secondary text-on-secondary-container font-body-sm text-body-sm px-lg py-sm rounded font-bold transition-colors shadow-sm">ACT_RETRY_LOAD</button>
+<button class="border border-outline-variant text-on-surface hover:bg-surface-variant font-body-sm text-body-sm px-lg py-sm rounded transition-colors">View Logs</button>
+</div>
+</div>
+</section>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-lg">
+<!-- 2. Empty Search/Filter State -->
+<section class="bg-surface-container rounded border border-outline-variant p-xl flex flex-col items-center justify-center text-center min-h-[300px]">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-md border border-outline-variant">
+<span class="material-symbols-outlined text-on-surface-variant text-[32px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">No matching trains found</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-lg max-w-sm">
+                            Query for Train ID <span class="font-mono-data text-mono-data bg-surface-dim px-unit rounded">UX-8921</span> returned zero results in the current yard. Try searching by Track ID or Status instead.
+                        </p>
+<div class="flex gap-sm">
+<button class="border border-outline-variant text-on-surface hover:bg-surface-variant font-body-sm text-body-sm px-lg py-sm rounded transition-colors">Clear All Filters</button>
+</div>
+</section>
+<!-- 3. No Records Created (Empty State) -->
+<section class="bg-surface-container rounded border border-outline-variant p-xl flex flex-col items-center justify-center text-center min-h-[300px]">
+<div class="w-16 h-16 rounded-full bg-surface-variant flex items-center justify-center mb-md border border-outline-variant border-dashed">
+<span class="material-symbols-outlined text-on-surface-variant text-[32px]">dataset</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-xs">No Active Trains in Yard</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-lg max-w-sm">
+                            The current sector is empty. Waiting for incoming manifest data or manual dispatcher entry.
+                        </p>
+<button class="bg-surface-bright border border-outline-variant hover:border-tertiary-fixed-dim text-on-surface font-body-sm text-body-sm px-lg py-sm rounded transition-all flex items-center gap-xs group">
+<span class="material-symbols-outlined text-[18px] group-hover:text-tertiary-fixed-dim transition-colors">add_box</span>
+                            ACT_CREATE_RECORD
+                        </button>
+</section>
+</div>
+</div>
+</main>
+</div>
+</body></html>
