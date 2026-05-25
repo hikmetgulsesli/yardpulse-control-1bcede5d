@@ -1,0 +1,1299 @@
+[
+  {
+    "screenId": "71392433539d496fb79defdfb92bd458",
+    "screenTitle": "Status Board - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 175
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 182
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "New Entry",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 250
+      },
+      {
+        "type": "button",
+        "label": "Update",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "Details",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "Details",
+        "line": 305
+      },
+      {
+        "type": "button",
+        "label": "Clear to Dep",
+        "line": 331
+      },
+      {
+        "type": "input",
+        "label": "Search ID, Track...",
+        "inputType": "text",
+        "placeholder": "Search ID, Track...",
+        "line": 132
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 158
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 162
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 175
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 182
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 186
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 136
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 139
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 206
+      },
+      {
+        "type": "button",
+        "label": "New Entry",
+        "line": 209
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 236
+      },
+      {
+        "type": "button",
+        "label": "Assign",
+        "line": 250
+      },
+      {
+        "type": "button",
+        "label": "Update",
+        "line": 277
+      },
+      {
+        "type": "button",
+        "label": "Details",
+        "line": 291
+      },
+      {
+        "type": "button",
+        "label": "Details",
+        "line": 305
+      },
+      {
+        "type": "button",
+        "label": "Clear to Dep",
+        "line": 331
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search ID, Track...",
+        "inputType": "text",
+        "placeholder": "Search ID, Track...",
+        "line": 132
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 18,
+    "requiresRouter": false,
+    "requiresDragDrop": true
+  },
+  {
+    "screenId": "691a96ff7c3343f8b55f0bea8f8bb935",
+    "screenTitle": "Item Editor - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 251
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 255
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 259
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 242
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 195
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 201
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 211
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "datetime-local",
+        "inputType": "datetime-local",
+        "line": 234
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 190
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 135
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 141
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 147
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 153
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 251
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 255
+      },
+      {
+        "type": "link",
+        "label": "Status",
+        "href": "#",
+        "line": 259
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 263
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Cancel",
+        "line": 239
+      },
+      {
+        "type": "button",
+        "label": "Changes",
+        "line": 242
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 195
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 201
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 211
+      },
+      {
+        "type": "input",
+        "label": "text",
+        "inputType": "text",
+        "line": 229
+      },
+      {
+        "type": "input",
+        "label": "datetime-local",
+        "inputType": "datetime-local",
+        "line": 234
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 19,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "46076d5f4d47498eae86ce84f7e0acdf",
+    "screenTitle": "Item Operations - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 165
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 169
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 173
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 177
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 183
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "Create New Item",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "Status: All",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "Track: Mainline",
+        "line": 248
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 348
+      },
+      {
+        "type": "button",
+        "label": "Edit Details",
+        "line": 394
+      },
+      {
+        "type": "button",
+        "label": "Reassign Track",
+        "line": 395
+      },
+      {
+        "type": "input",
+        "label": "Search ID, Track, or Status...",
+        "inputType": "text",
+        "placeholder": "Search ID, Track, or Status...",
+        "line": 136
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 263
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 279
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 293
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 307
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 320
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 329
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 161
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 165
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 169
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 173
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 177
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 183
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 187
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "refresh",
+        "line": 200
+      },
+      {
+        "type": "button",
+        "label": "Create New Item",
+        "line": 204
+      },
+      {
+        "type": "button",
+        "label": "Status: All",
+        "line": 244
+      },
+      {
+        "type": "button",
+        "label": "Track: Mainline",
+        "line": 248
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 348
+      },
+      {
+        "type": "button",
+        "label": "Edit Details",
+        "line": 394
+      },
+      {
+        "type": "button",
+        "label": "Reassign Track",
+        "line": 395
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search ID, Track, or Status...",
+        "inputType": "text",
+        "placeholder": "Search ID, Track, or Status...",
+        "line": 136
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 263
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 279
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 293
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 307
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 320
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 329
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 23,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "947453c236624bb5bb5a6eb4fd7b8a56",
+    "screenTitle": "Settings and Preferences - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 163
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 175
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 189
+      },
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "Reset Defaults",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "Configuration",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "add",
+        "line": 289
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 307
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 315
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 237
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 266
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 273
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 163
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 167
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 171
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 175
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 179
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 185
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 189
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Notifications",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Account",
+        "line": 143
+      },
+      {
+        "type": "button",
+        "label": "Reset Defaults",
+        "line": 205
+      },
+      {
+        "type": "button",
+        "label": "Configuration",
+        "line": 208
+      },
+      {
+        "type": "button",
+        "label": "add",
+        "line": 289
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 307
+      },
+      {
+        "type": "button",
+        "label": "delete",
+        "line": 315
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 230
+      },
+      {
+        "type": "input",
+        "label": "radio",
+        "inputType": "radio",
+        "line": 237
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 248
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 266
+      },
+      {
+        "type": "input",
+        "label": "number",
+        "inputType": "number",
+        "line": 273
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 20,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "0d5d7b2229064b71a48e8fb17865fbfe",
+    "screenTitle": "Insights - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 236
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 244
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 249
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 253
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 260
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 264
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 217
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 385
+      },
+      {
+        "type": "input",
+        "label": "Search Track ID, Consist...",
+        "inputType": "text",
+        "placeholder": "Search Track ID, Consist...",
+        "line": 208
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 236
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 240
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 244
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 249
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 253
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 260
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 264
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 213
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 217
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 278
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 385
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search Track ID, Consist...",
+        "inputType": "text",
+        "placeholder": "Search Track ID, Consist...",
+        "line": 208
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 12,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "15d464135374477da92e0ae67694d309",
+    "screenTitle": "Empty and Error Recovery - YardPulse Control",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 160
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "ACT_RETRY_LOAD",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "ACT_CREATE_RECORD",
+        "line": 214
+      },
+      {
+        "type": "input",
+        "label": "Search Yard Data...",
+        "inputType": "text",
+        "placeholder": "Search Yard Data...",
+        "line": 114
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Items",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Editor",
+        "href": "#",
+        "line": 138
+      },
+      {
+        "type": "link",
+        "label": "Status Board",
+        "href": "#",
+        "line": 142
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 146
+      },
+      {
+        "type": "link",
+        "label": "settings",
+        "href": "#",
+        "line": 150
+      },
+      {
+        "type": "link",
+        "label": "help",
+        "href": "#",
+        "line": 156
+      },
+      {
+        "type": "link",
+        "label": "logout",
+        "href": "#",
+        "line": 160
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 117
+      },
+      {
+        "type": "button",
+        "label": "account_circle",
+        "line": 120
+      },
+      {
+        "type": "button",
+        "label": "ACT_RETRY_LOAD",
+        "line": 186
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 187
+      },
+      {
+        "type": "button",
+        "label": "Clear All Filters",
+        "line": 202
+      },
+      {
+        "type": "button",
+        "label": "ACT_CREATE_RECORD",
+        "line": 214
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search Yard Data...",
+        "inputType": "text",
+        "placeholder": "Search Yard Data...",
+        "line": 114
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 14,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
